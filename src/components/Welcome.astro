@@ -1,0 +1,59 @@
+---
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+---
+
+<div
+  class='container mx-auto flex min-h-dvh flex-col items-center justify-center overflow-x-hidden px-4 pt-24 pb-16 sm:pt-20 sm:pb-20 md:pt-24 md:pb-24'
+>
+  <div class='mb-12 text-center'>
+    <h1 class='font-sora text-2xl font-bold sm:text-3xl md:text-4xl'>Astro + TailwindCSS + shadcn/ui Template</h1>
+    <p class='font-oxanium text-muted-foreground mb-6 text-xl'>
+      A comprehensive template with all the features needed for modern web development
+    </p>
+    <div class='mb-8 flex flex-wrap justify-center gap-2'>
+      <Badge variant='secondary'>MIT License</Badge>
+      <Badge variant='secondary' className='font-oxanium text-uppercase bg-[#BC52EE]'>Astro 5.12.9</Badge>
+      <Badge variant='secondary' className='font-oxanium text-uppercase bg-[#61DAFB]'>React 19.1.1</Badge>
+      <Badge variant='secondary' className='font-oxanium text-uppercase bg-[#38BDF8]'>TailwindCSS 4.1.4</Badge>
+      <Badge variant='secondary' className='font-oxanium text-uppercase bg-[#09090b] text-white'>shadcn/ui 2.10.0</Badge
+      >
+    </div>
+  </div>
+
+  <div class='mb-12 grid gap-4 sm:grid-cols-1 sm:gap-6 md:grid-cols-2'>
+    <Card>
+      <CardHeader>
+        <CardTitle> <span>Features</span></CardTitle>
+      </CardHeader>
+      <CardContent>
+        <ul class='space-y-3'>
+          <li class='flex items-center gap-3'>
+            <span><strong>Astro v5</strong>: A fast and modern static site generator</span>
+          </li>
+          <li class='flex items-center gap-3'>
+            <span><strong>TailwindCSS v4</strong>: The latest utility-first CSS</span>
+          </li>
+          <li class='flex items-center gap-3'>
+            <span><strong>shadcn/ui</strong>: Reusable UI components</span>
+          </li>
+          <li class='flex items-center gap-3'>
+            <span><strong>React</strong>: Component usage</span>
+          </li>
+          <li class='flex items-center gap-3'>
+            <span><strong>TypeScript</strong>: Type-safe development environment</span>
+          </li>
+        </ul>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardHeader>
+        <CardTitle>Quick Start</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div class='space-y-4'></div>
+      </CardContent>
+    </Card>
+  </div>
+</div>
