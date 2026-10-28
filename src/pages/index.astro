@@ -1,20 +1,15 @@
 ---
 // src/pages/index.astro
-import Sidebar from '@/components/Sidebar.astro';
 import Layout from '@/layouts/Layout.astro';
 import type { PageMeta } from '@/lib/constants';
-import Canvas from '../components/Canvas.astro';
 
 const meta: PageMeta = {
-  title: 'Astro + TailwindCSS + shadcn/ui Template',
+  title: 'BPMN',
   description: 'A modern web development template with all necessary features',
   ogType: 'website',
 };
 ---
 
 <Layout {...meta}>
-  <div class='grid-cols-sidebar grid gap-2 p-2'>
-    <Sidebar />
-    <Canvas />
-  </div>
+  <div class='grid-cols-sidebar grid gap-2 p-2'>Hello</div>
 </Layout>
